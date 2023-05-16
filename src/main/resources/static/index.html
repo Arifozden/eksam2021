@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrering pakker</title>
+  <script src="index.js"></script>
+</head>
+<body>
+<h2>Registrer ny pakke</h2>
+<table>
+  <tr>
+    <td>Fornavn</td>
+    <td><input type="text" id="fornavn" onchange="validerFornavn()"></td>
+    <td><span id="feilFornavn"></span> </td>
+  </tr>
+    <tr>
+        <td>Etternavn</td>
+        <td><input type="text" id="etternavn" onchange="validerEtternavn()"></td>
+        <td><span id="feilEtternavn"></span> </td>
+    </tr>
+    <tr>
+        <td>Adresse</td>
+        <td><input type="text" id="adresse" onchange="validerAdresse()"></td>
+        <td><span id="feilAdresse"></span> </td>
+    </tr>
+    <tr>
+        <td>Postnr</td>
+        <td><input type="number" id="postnr" onchange="validerPostnr()"></td>
+        <td><span id="feilPostnr"></span> </td>
+    </tr>
+    <tr>
+        <td>Telefonnr</td>
+        <td><input type="number" id="telefonnr" onchange="validerTelefonnr()"></td>
+        <td><span id="feilTelefonnr"></span> </td>
+    </tr>
+    <tr>
+        <td>Epost</td>
+        <td><input type="email" id="epost" onchange="validerEpost()"></td>
+        <td><span id="feilEpost"></span> </td>
+    </tr>
+    <tr>
+        <td>Pakkevolum (dm^3)</td>
+        <td><input type="number" id="volum" onchange="validerVolum()"></td>
+        <td><span id="feilVolum"></span> </td>
+    </tr>
+    <tr>
+        <td>Vekt (kg)</td>
+        <td><input type="number" id="vekt" onchange="validerVekt()"></td>
+        <td><span id="feilVekt"></span> </td>
+    </tr>
+    <tr>
+        <td><input type="submit" id="registrer" value="Registrer" onclick="regPakke()"></td>
+    </tr>
+</table>
+</body>
+</html>
